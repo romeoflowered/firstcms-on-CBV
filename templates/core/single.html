@@ -1,0 +1,13 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-12 pt-5">
+      <img src="https://via.placeholder.com/300x100" class="card-img-top">
+      <h2 class="pt-5">{{ post.title }}</h2>
+      <p>{{ post.excerpt }}</p>
+      <a href="{% url 'core:index' %}">Back</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
